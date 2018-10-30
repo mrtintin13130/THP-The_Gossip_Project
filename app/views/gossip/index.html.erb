@@ -13,14 +13,14 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav">
-					<li class="nav-item">
-						<lol class="nav-link"><%= link_to "Accueil", '/' %><span class="sr-only">(current)</span></lol>
-					</li>
 					<li class="nav-item active">
-						<lol class="nav-link"><%= link_to "La team", 'team' %></lol>
+						<%= link_to "Accueil", '/', class: "nav-link" %><span class="sr-only">(current)</span>
 					</li>
 					<li class="nav-item">
-						<lol class="nav-link"><%= link_to "contact", 'contact' %></lol>
+						<%= link_to "La team", 'team', class: "nav-link" %>
+					</li>
+					<li class="nav-item">
+						<%= link_to "contact", 'contact', class: "nav-link" %>
 					</li>
 				</ul>
 			</div>
@@ -35,6 +35,10 @@
 			<% @gossip.each do |user| %>
 				<p><%= user.content %></p>
 				<h4><i>- <%= user.author %></a></i></h4>
+				<%= link_to "Voir", "/gossip/show/#{user.id}", class: "btn btn-primary" %>
+				<br>
+				<br>
+				<br>
 			<% end %>
 		</center>
 	</body>

@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'gossip#contact'
 
+  get 'gossip/show/:id', to: 'gossip#show'
+
 end
