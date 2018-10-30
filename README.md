@@ -9,12 +9,14 @@ Vous pouvez accéder au site en production en [cliquant ici](https://thp-thegoss
 ```
 ~ cd [NOM DE DU REPOSITORY] ("THP-The_Gossip_Project" si vous ne modifiez pas le nom)
 
-~ bundle install ```
+~ bundle install 
+```
 
 ### Si vous souhaitez lancer le site en local
 
 ```
-~ rails server ```
+~ rails server 
+```
 
 ## Membres du groupe
 
